@@ -66,7 +66,7 @@
       "name": "number",
       "description": {
         "kind": "markdown",
-        "value": "\nSi vous voulez que l'entrée de l'utilisateur soit automatiquement typée comme un nombre, vous pouvez ajouter le modificateur `number` à vos entrées gérées par `v-model` :\n\n```html\n<input v-model.number=\"age\" />\n```\n\nSi la valeur ne peut pas être analysée avec `parseFloat()`, alors la valeur originale est utilisée à la place.\n\nLe modificateur `number` est appliqué automatiquement si l'entrée possède `type=\"number\"`.\n"
+        "value": "\nSi vous voulez que l'entrée de l'utilisateur soit automatiquement typée comme un nombre, vous pouvez ajouter le modificateur `number` à vos entrées gérées par `v-model` :\n\n```html\n<input v-model.number=\"age\" />\n```\n\nSi la valeur ne peut pas être analysée avec `parseFloat()`, alors la valeur originale (chaîne) est utilisée à la place. En particulier, si l'entrée est vide (par exemple après que l'utilisateur ait effacé le champ de saisie), une chaîne vide est renvoyée. Ce comportement diffère de la [propriété DOM `valueAsNumber`](https://developer.mozilla.org/en-US/docs/Web/API/HTMLInputElement#valueasnumber).\n\nLe modificateur `number` est appliqué automatiquement si l'entrée possède `type=\"number\"`.\n"
       },
       "references": [
         {

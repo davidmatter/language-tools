@@ -8,7 +8,7 @@
           "name": "src",
           "description": {
             "kind": "markdown",
-            "value": "\n`*.vue` コンポーネントを複数のファイルに分割したい場合は、`src` 属性を使用して言語ブロックに外部ファイルをインポートできます:\n\n```vue\n<template src=\"./template.html\"></template>\n<style src=\"./style.css\"></style>\n<script src=\"./script.js\"></script>\n```\n\n`src` でのインポートは webpack のモジュールリクエストと同じパス解決ルールに従うので注意してください。つまり:\n\n- 相対パスは `./` で始める必要があります\n- npm の依存関係からリソースをインポートできます:\n\n```vue\n<!-- インストール済みの \"todomvc-app-css\" npm パッケージからファイルをインポート -->\n<style src=\"todomvc-app-css/index.css\" />\n```\n\n`src` でのインポートは、カスタムブロックでも動作します。例:\n\n```vue\n<unit-test src=\"./unit-test.js\">\n</unit-test>\n```\n"
+            "value": "\n`*.vue` コンポーネントを複数のファイルに分割したい場合は、`src` 属性を使用して言語ブロックに外部ファイルをインポートできます:\n\n```vue\n<template src=\"./template.html\"></template>\n<style src=\"./style.css\"></style>\n<script src=\"./script.js\"></script>\n```\n\n`src` でのインポートは webpack のモジュールリクエストと同じパス解決ルールに従うので注意してください。つまり:\n\n- 相対パスは `./` で始める必要があります\n- npm の依存関係からリソースをインポートできます:\n\n```vue\n<!-- インストール済みの \"todomvc-app-css\" npm パッケージからファイルをインポート -->\n<style src=\"todomvc-app-css/index.css\" />\n```\n\n`src` でのインポートは、カスタムブロックでも動作します。例:\n\n```vue\n<unit-test src=\"./unit-test.js\">\n</unit-test>\n```\n\n:::warning Note\n`src` でエイリアスを使用する場合、モジュールリクエストとして解釈される `~` から始めないでください。これは、ノードモジュール内のアセットを参照できることを意味します:\n```vue\n<img src=\"~some-npm-package/foo.png\">\n```\n:::\n"
           },
           "references": [
             {
@@ -201,7 +201,7 @@
           "name": "src",
           "description": {
             "kind": "markdown",
-            "value": "\n`*.vue` コンポーネントを複数のファイルに分割したい場合は、`src` 属性を使用して言語ブロックに外部ファイルをインポートできます:\n\n```vue\n<template src=\"./template.html\"></template>\n<style src=\"./style.css\"></style>\n<script src=\"./script.js\"></script>\n```\n\n`src` でのインポートは webpack のモジュールリクエストと同じパス解決ルールに従うので注意してください。つまり:\n\n- 相対パスは `./` で始める必要があります\n- npm の依存関係からリソースをインポートできます:\n\n```vue\n<!-- インストール済みの \"todomvc-app-css\" npm パッケージからファイルをインポート -->\n<style src=\"todomvc-app-css/index.css\" />\n```\n\n`src` でのインポートは、カスタムブロックでも動作します。例:\n\n```vue\n<unit-test src=\"./unit-test.js\">\n</unit-test>\n```\n"
+            "value": "\n`*.vue` コンポーネントを複数のファイルに分割したい場合は、`src` 属性を使用して言語ブロックに外部ファイルをインポートできます:\n\n```vue\n<template src=\"./template.html\"></template>\n<style src=\"./style.css\"></style>\n<script src=\"./script.js\"></script>\n```\n\n`src` でのインポートは webpack のモジュールリクエストと同じパス解決ルールに従うので注意してください。つまり:\n\n- 相対パスは `./` で始める必要があります\n- npm の依存関係からリソースをインポートできます:\n\n```vue\n<!-- インストール済みの \"todomvc-app-css\" npm パッケージからファイルをインポート -->\n<style src=\"todomvc-app-css/index.css\" />\n```\n\n`src` でのインポートは、カスタムブロックでも動作します。例:\n\n```vue\n<unit-test src=\"./unit-test.js\">\n</unit-test>\n```\n\n:::warning Note\n`src` でエイリアスを使用する場合、モジュールリクエストとして解釈される `~` から始めないでください。これは、ノードモジュール内のアセットを参照できることを意味します:\n```vue\n<img src=\"~some-npm-package/foo.png\">\n```\n:::\n"
           },
           "references": [
             {
@@ -527,7 +527,7 @@
           "name": "src",
           "description": {
             "kind": "markdown",
-            "value": "\n`*.vue` コンポーネントを複数のファイルに分割したい場合は、`src` 属性を使用して言語ブロックに外部ファイルをインポートできます:\n\n```vue\n<template src=\"./template.html\"></template>\n<style src=\"./style.css\"></style>\n<script src=\"./script.js\"></script>\n```\n\n`src` でのインポートは webpack のモジュールリクエストと同じパス解決ルールに従うので注意してください。つまり:\n\n- 相対パスは `./` で始める必要があります\n- npm の依存関係からリソースをインポートできます:\n\n```vue\n<!-- インストール済みの \"todomvc-app-css\" npm パッケージからファイルをインポート -->\n<style src=\"todomvc-app-css/index.css\" />\n```\n\n`src` でのインポートは、カスタムブロックでも動作します。例:\n\n```vue\n<unit-test src=\"./unit-test.js\">\n</unit-test>\n```\n"
+            "value": "\n`*.vue` コンポーネントを複数のファイルに分割したい場合は、`src` 属性を使用して言語ブロックに外部ファイルをインポートできます:\n\n```vue\n<template src=\"./template.html\"></template>\n<style src=\"./style.css\"></style>\n<script src=\"./script.js\"></script>\n```\n\n`src` でのインポートは webpack のモジュールリクエストと同じパス解決ルールに従うので注意してください。つまり:\n\n- 相対パスは `./` で始める必要があります\n- npm の依存関係からリソースをインポートできます:\n\n```vue\n<!-- インストール済みの \"todomvc-app-css\" npm パッケージからファイルをインポート -->\n<style src=\"todomvc-app-css/index.css\" />\n```\n\n`src` でのインポートは、カスタムブロックでも動作します。例:\n\n```vue\n<unit-test src=\"./unit-test.js\">\n</unit-test>\n```\n\n:::warning Note\n`src` でエイリアスを使用する場合、モジュールリクエストとして解釈される `~` から始めないでください。これは、ノードモジュール内のアセットを参照できることを意味します:\n```vue\n<img src=\"~some-npm-package/foo.png\">\n```\n:::\n"
           },
           "references": [
             {
@@ -856,7 +856,7 @@
           "name": "src",
           "description": {
             "kind": "markdown",
-            "value": "\n`*.vue` コンポーネントを複数のファイルに分割したい場合は、`src` 属性を使用して言語ブロックに外部ファイルをインポートできます:\n\n```vue\n<template src=\"./template.html\"></template>\n<style src=\"./style.css\"></style>\n<script src=\"./script.js\"></script>\n```\n\n`src` でのインポートは webpack のモジュールリクエストと同じパス解決ルールに従うので注意してください。つまり:\n\n- 相対パスは `./` で始める必要があります\n- npm の依存関係からリソースをインポートできます:\n\n```vue\n<!-- インストール済みの \"todomvc-app-css\" npm パッケージからファイルをインポート -->\n<style src=\"todomvc-app-css/index.css\" />\n```\n\n`src` でのインポートは、カスタムブロックでも動作します。例:\n\n```vue\n<unit-test src=\"./unit-test.js\">\n</unit-test>\n```\n"
+            "value": "\n`*.vue` コンポーネントを複数のファイルに分割したい場合は、`src` 属性を使用して言語ブロックに外部ファイルをインポートできます:\n\n```vue\n<template src=\"./template.html\"></template>\n<style src=\"./style.css\"></style>\n<script src=\"./script.js\"></script>\n```\n\n`src` でのインポートは webpack のモジュールリクエストと同じパス解決ルールに従うので注意してください。つまり:\n\n- 相対パスは `./` で始める必要があります\n- npm の依存関係からリソースをインポートできます:\n\n```vue\n<!-- インストール済みの \"todomvc-app-css\" npm パッケージからファイルをインポート -->\n<style src=\"todomvc-app-css/index.css\" />\n```\n\n`src` でのインポートは、カスタムブロックでも動作します。例:\n\n```vue\n<unit-test src=\"./unit-test.js\">\n</unit-test>\n```\n\n:::warning Note\n`src` でエイリアスを使用する場合、モジュールリクエストとして解釈される `~` から始めないでください。これは、ノードモジュール内のアセットを参照できることを意味します:\n```vue\n<img src=\"~some-npm-package/foo.png\">\n```\n:::\n"
           },
           "references": [
             {
@@ -1041,7 +1041,7 @@
       "name": "src",
       "description": {
         "kind": "markdown",
-        "value": "\n`*.vue` コンポーネントを複数のファイルに分割したい場合は、`src` 属性を使用して言語ブロックに外部ファイルをインポートできます:\n\n```vue\n<template src=\"./template.html\"></template>\n<style src=\"./style.css\"></style>\n<script src=\"./script.js\"></script>\n```\n\n`src` でのインポートは webpack のモジュールリクエストと同じパス解決ルールに従うので注意してください。つまり:\n\n- 相対パスは `./` で始める必要があります\n- npm の依存関係からリソースをインポートできます:\n\n```vue\n<!-- インストール済みの \"todomvc-app-css\" npm パッケージからファイルをインポート -->\n<style src=\"todomvc-app-css/index.css\" />\n```\n\n`src` でのインポートは、カスタムブロックでも動作します。例:\n\n```vue\n<unit-test src=\"./unit-test.js\">\n</unit-test>\n```\n"
+        "value": "\n`*.vue` コンポーネントを複数のファイルに分割したい場合は、`src` 属性を使用して言語ブロックに外部ファイルをインポートできます:\n\n```vue\n<template src=\"./template.html\"></template>\n<style src=\"./style.css\"></style>\n<script src=\"./script.js\"></script>\n```\n\n`src` でのインポートは webpack のモジュールリクエストと同じパス解決ルールに従うので注意してください。つまり:\n\n- 相対パスは `./` で始める必要があります\n- npm の依存関係からリソースをインポートできます:\n\n```vue\n<!-- インストール済みの \"todomvc-app-css\" npm パッケージからファイルをインポート -->\n<style src=\"todomvc-app-css/index.css\" />\n```\n\n`src` でのインポートは、カスタムブロックでも動作します。例:\n\n```vue\n<unit-test src=\"./unit-test.js\">\n</unit-test>\n```\n\n:::warning Note\n`src` でエイリアスを使用する場合、モジュールリクエストとして解釈される `~` から始めないでください。これは、ノードモジュール内のアセットを参照できることを意味します:\n```vue\n<img src=\"~some-npm-package/foo.png\">\n```\n:::\n"
       },
       "references": [
         {
