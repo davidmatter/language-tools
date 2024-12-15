@@ -5,7 +5,7 @@
       "name": "lazy",
       "description": {
         "kind": "markdown",
-        "value": "\nVe výchozím nastavení `v-model` synchronizuje vstup s daty po každé události `input` (s&nbsp;výjimkou IME kompozice, jak je [uvedeno výše](#vmodel-ime-tip)). Místo toho můžete přidat modifikátor`lazy` k synchronizaci po události `change`:\n\n```html\n<!-- synchronizuje se po „change“ místo „input“ -->\n<input v-model.lazy=\"msg\" />\n```\n"
+        "value": "\nVe výchozím nastavení `v-model` synchronizuje vstup s daty po každé události `input` (s&nbsp;výjimkou IME kompozice, jak je [uvedeno výše](#vmodel-ime-tip)). Místo toho můžete přidat modifikátor `lazy` k synchronizaci po události `change`:\n\n```html\n<!-- synchronizuje se po „change“ místo „input“ -->\n<input v-model.lazy=\"msg\" />\n```\n"
       },
       "references": [
         {
